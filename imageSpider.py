@@ -54,6 +54,6 @@ if __name__ == '__main__':
             allurl.append(each)
         count = count + 1;
         if (count == 4):
-            time.sleep(3)
+            time.sleep(2)
             count = 1
 qsbk.saveinfo(allurl)
