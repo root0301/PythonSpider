@@ -35,7 +35,7 @@ class spider(object):
         imgURL = re.search('<img src=(.*?) alt=',eachfood,re.S).group(1).replace('\'','').replace('small','mid')
         return imgURL
 
-#saveinfo用来保存结果到info.txt文件中
+#saveinfo用来保存结果到文件中
     def saveinfo(self,foodinfo):
         f = open('foodURL.txt','a',encoding='utf-8')
         for each in foodinfo:
